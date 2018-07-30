@@ -1,0 +1,243 @@
+page-settings {
+
+    h1 {
+        color: white!important;
+    }
+    h2{
+        color: white!important;
+    }
+    
+    hide-card{
+        size: 100px;
+    }
+    
+    .validButton{
+        margin: 0px auto;
+    }
+
+    h3 {
+        padding:50px;
+        color: white!important;
+    }
+    
+
+    h4 {
+        
+        color: white!important;
+    }
+
+    .scroll-content{margin-top:0;
+        margin: 0;
+        overflow: hidden;
+        overflow-y: hidden;
+            
+    }
+    
+    .choixDiv{
+        //size: 100px;
+        border-radius: 10px!important;
+        display:flex;
+        margin-top: 20px!important;
+        height: 150px;
+        width: 300px;
+        text-align: justify;
+        text-justify: inter-word;
+        background: rgba(247, 248, 246, 0);
+        
+    }
+
+
+    .rowButton{
+        text-align: justify;
+        text-justify: inter-word;
+        border-radius: 10px!important;
+        //size: 100px;
+        height: 150px;
+        width: 300px;
+        background: rgba(211, 80, 19, 0.5);
+        display: block;
+        //margin-top: 50px!important;
+        //padding: 15px
+    }
+
+    
+
+    
+
+    .lab{
+        text-align: justify;
+           text-justify: inter-word;
+        display: block;
+        border-radius: 10px!important;
+        background: rgba(38, 19, 211, 0.5);
+        //background-color: rgba(0, 0, 255, 0.185);
+        //padding:30px;
+        //margin: 30px auto;
+        //margin: auto 30px;
+        color: white;
+        //margin-left: 10px;
+    //margin-top:50px;
+    //margin-bottom: 10px;
+    //background: rgba(255, 255, 255, 0.5);
+    //border: medium none;
+    //size: 100px;
+    //text-align: center;
+    
+    height: 150px;
+    width: 150px!important;
+    }
+
+    .myIcon{
+        size: 100%;
+        padding-right: 15px;
+        color: white;
+        
+    }
+
+
+    .contentImg{
+        border-radius: 10px!important;
+        background: rgba(38, 19, 211, 0.5);
+        //size: 100px;
+        //width: 50%;
+        //height: 100px;
+        height: 100%;
+        width: 50%;
+    }
+
+    .contentCaption {
+        background: rgba(38, 19, 211, 0.5);
+        //size: 15px;
+    }
+
+    .bg {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(../assets/imgs/forest.jpg);
+        background-size: cover;
+        text-align: justify;
+        //background: #03001e;  /* fallback for old browsers */
+        //background: -webkit-linear-gradient(to top, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+        //background: linear-gradient(to top, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        /*::-webkit-scrollbar,
+        *::-webkit-scrollbar {
+          display: none;
+        }
+
+        .scroll-content{
+            align-content: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            overflow: none;
+        }*/
+    
+    
+        ion-card.card{
+            
+            
+            
+            //margin-top: 50px;
+            ion-scroll {
+                overflow-y: hidden;
+                height:500px;
+                display: flex;
+                //background-color: black;
+                scrollbar-base-color: black;
+                //-ms-scrollbar-base-color: bisque;
+                text-align: justify;
+                ::-webkit-scrollbar-track
+                {
+                border-radius: 10px!important;
+                background-color: rgba(245, 245, 245, 0)!important;
+                }
+
+                ::-webkit-scrollbar
+                {
+                width: 10px!important;
+                background-color: rgba(245, 245, 245, 0)!important;
+                }
+
+                ::-webkit-scrollbar-thumb
+                {
+                border-radius: 10px!important;
+                background-color: rgba(41, 73, 214, 0.473)!important;
+                }
+
+
+
+
+
+
+
+                }
+            padding: 30px;
+            box-shadow: none;
+            background: rgba(0,0,0,0.5);
+            border-radius: 50px;
+        }
+    
+        ion-card-header.card-header {
+            color: #fff;
+        }
+    
+        .list > .item-block .item-inner {
+            border: medium none;
+        }
+    
+    
+        #validButton{
+            margin-top: 5px;
+        }
+    
+    
+        .list{
+            .item {
+                background: rgba(38, 19, 211, 0.5);
+                //background-color: rgba(0, 0, 255, 0.185);
+                //padding:30px;
+                //margin: 30px auto;
+                //margin: auto 30px;
+            
+                //margin-left: 10px;
+            margin-bottom: 10px;
+            //background: rgba(255, 255, 255, 0.5);
+            border: medium none;
+            size: 100px;
+    
+            .label{
+                margin-right: 0px;
+                text-align: justify;
+            
+                        
+            }
+    
+    
+            .input{
+                margin: auto;
+            }
+    
+    
+            .text-input, {
+                color: #fff;
+            }
+    
+    
+        }
+        }
+    
+    
+
+
+        }
+
+        /*
+        ::-webkit-scrollbar,
+        *::-webkit-scrollbar {
+          display: none;
+        }*/
+
+}

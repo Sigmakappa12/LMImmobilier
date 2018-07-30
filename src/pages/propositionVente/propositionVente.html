@@ -1,0 +1,81 @@
+<ion-header class="navb">
+    <ion-navbar  color=primary>
+      <ion-title text-center >Details de la vente</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content no-bounce   text-center class="bg">
+        
+        
+        <ion-card id="card">
+        
+        <ion-card-header>Propriétaire du bien :</ion-card-header>
+        <ion-scroll class="scroll" scrollY="true">
+        <div class="laDiv">
+        
+                   
+        <ion-list>
+                
+           
+                <h2>Informations :</h2>
+            
+        <ion-item>
+            <ion-label fixed>Nom :</ion-label>
+            <ion-input type="text" [(ngModel)]="surname"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+            <ion-label fixed>Prénom :</ion-label>
+            <ion-input type="text" [(ngModel)]="name"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+            <ion-label fixed>Email :</ion-label>
+            <ion-input type="text" [(ngModel)]="mail"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label fixed>Pays :</ion-label>
+          <ion-input type="text" [(ngModel)]="country"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+            <ion-label fixed>Adresse :</ion-label>
+            <ion-input type="text" [(ngModel)]="adress"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label fixed>CP :</ion-label>
+            <ion-input type="text" [(ngModel)]="postalCode"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label fixed>Ville :</ion-label>
+            <ion-input type="text" [(ngModel)]="town"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label fixed>Tel :</ion-label>
+            <ion-input type="text" [(ngModel)]="phone"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+            <ion-label class="coms" >Commentaires :</ion-label>
+            
+            <ion-textarea class="comments" type="text"  rows="8" id="messageInputBox" [(ngModel)]="comments"></ion-textarea>
+        </ion-item>
+   
+        </ion-list>
+    </div>
+    </ion-scroll>
+    
+        </ion-card>
+   
+        <button id="fillMeButton" ion-button clear (tap) = "fillMe()" >Moi-même</button>
+      </ion-content>
+
+      <ion-footer text-center>
+       
+            <button id="sellButton" round full ion-button (tap) = "sell()" >Mise en vente</button>    
+        
+      </ion-footer>
+      

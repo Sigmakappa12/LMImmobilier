@@ -1,0 +1,97 @@
+<ion-header>
+    <ion-toolbar color=primary>
+          <button ion-button menuToggle="venteMenu">
+              <ion-icon name='menu'></ion-icon>
+          </button> 
+      <ion-title text-center >Recommandation</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+
+  <ion-content class="bg" text-center>
+    <ion-card>
+      <h2>Un ami ou une connaissance a pour projet de vendre un bien immobilier?</h2>
+       <h3 text-justify> Devenez acteur de la transaction en sollicitant nos professionels du commerce immobilier qui sauront mettre à vos services leur expertise du marché. 
+        </h3>
+      <ion-card-header>Localisation:</ion-card-header>
+          <div >
+            <ion-list no-line >
+              <ion-item text-center >
+                <ion-label text-center><ion-icon name='pin' color=primary></ion-icon></ion-label><ion-input id="placeInput" type="any" placeholder="59000 Lille" [(ngModel)]="localisation"></ion-input>
+              </ion-item>
+              
+              
+              
+            </ion-list>
+            </div>
+            <button id="validButton" ion-button clear (tap) = "showChoixCollaborateur()" >Suite <ion-icon name='redo' color=primary style="padding-left: 15px;"> </ion-icon></button>
+    
+    
+            
+    </ion-card>
+    
+  </ion-content>
+
+
+
+
+
+
+  <ion-menu [content]="myContent" id="venteMenu" class="venteMenu" type="overlay">
+      
+    <ion-content>
+        <div class="bgm">
+            <ion-list class="myList">
+              <ion-card text-center class="hide-card">
+                  <img src={{user.photoURL}} class="custom-avatar"/>
+                  <h2>{{user.displayName}}</h2>
+                  
+                  <hr>
+              </ion-card>
+  
+              <ion-item color=primary (tap)="admin()" *ngIf="user.displayName == 'LM' || user.displayName ==  'maxi' " menuClose>
+                <ion-icon name='bowtie'style="padding-right: 15px;"></ion-icon>Administration
+              </ion-item>
+
+
+
+
+             <ion-item color=primary (tap)="settings()" menuClose>
+                  <ion-icon name='cog'style="padding-right: 15px;"></ion-icon>Paramètres
+             </ion-item>
+
+             <ion-item color=primary (tap)="showDashboard()" menuClose>
+                <ion-icon name='pulse'style="padding-right: 15px;"></ion-icon>Tableau De Bord
+            </ion-item>
+              
+              <ion-item color=primary (tap)="showLink()" menuClose>
+                  <ion-icon name='people'style="padding-right: 15px;"></ion-icon>Mise en relation
+              </ion-item>
+              
+              <ion-item color=primary (tap)="showGodfather()" menuClose>
+                  <ion-icon name='contacts'style="padding-right: 15px;"></ion-icon>Parrainage
+              </ion-item>
+  
+              <ion-item color=primary menuClose (tap)="showMovies()" >
+                  <ion-icon name='videocam'style="padding-right: 15px;"></ion-icon>Vidéos
+              </ion-item>
+  
+              <ion-item color=secondary (tap)="logEvent()" menuClose>
+                  <ion-icon name='calendar'style="padding-right: 15px;"></ion-icon>Evenements
+              </ion-item>
+  
+              <button ion-button full color=danger class="closeButton" menuClose (tap)="logOut()">
+                  <ion-icon name='log-out'style="padding-right: 15px;"></ion-icon>Deconnecter
+              </button>
+              
+            </ion-list>
+        </div>
+    </ion-content>    
+          
+</ion-menu>
+<ion-nav #myContent main [root]="rootPage"  swipeBackEnabled="false"></ion-nav>
+
+
+
+
+  

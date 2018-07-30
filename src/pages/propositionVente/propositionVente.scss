@@ -1,0 +1,212 @@
+page-propositionVente {
+	
+	
+
+	.fillMeButton{
+		text-decoration: underline;
+	}
+
+	/*.scroll-content{margin-top:0;
+		margin: 0;
+		overflow: hidden;
+		overflow-y: hidden;
+			
+	}*/
+	/*scroll-content{
+		align-content: center;
+		display: hidden;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		overflow: hidden;
+
+	}*/
+
+
+	.navb{
+		margin: 0;
+	}
+	
+	ion-content.bg {
+		margin-top: 0px;
+		height: 100%;
+		width: 100%;
+		//background: #03001e;  /* fallback for old browsers */
+		//background: -webkit-linear-gradient(to top, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+		//background: linear-gradient(to top, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		background-image: url(../assets/imgs/forest.jpg);
+		background-size: cover;
+
+		/*scroll-content{
+			margin-top: 0px;
+			margin: 0px;
+			overflow: hidden;
+			overflow-y: hidden;
+		}*/
+		ion-card.card{
+			height: 800px;	
+			
+			croll-content{
+				align-content: center;
+				display: hidden;
+				
+				justify-content: center;
+				text-align: center;
+				overflow: hidden;
+		
+			}
+			
+
+			
+				
+			
+			ion-scroll.scroll {
+				padding: 5px;
+				margin-top: 5px;
+				overflow-y: hidden;
+				height:90%;
+				//display: flex;
+				//background-color: black;
+				scrollbar-base-color: black;
+				//-ms-scrollbar-base-color: bisque;
+				text-align: justify;
+				::-webkit-scrollbar-track
+				{
+				border-radius: 10px!important;
+				background-color: rgba(245, 245, 245, 0)!important;
+				}
+	
+				::-webkit-scrollbar
+				{
+				width: 10px!important;
+				background-color: rgba(245, 245, 245, 0)!important;
+				}
+	
+				::-webkit-scrollbar-thumb
+				{
+				border-radius: 10px!important;
+				background-color: rgba(41, 73, 214, 0.473)!important;
+				}
+				
+				
+				
+				div.laDiv{
+					//padding: 50px;
+					height:400px;
+				
+				.list{
+					margin-right: 20px;
+					//height: 500px;
+					//width: 400px;
+					//size:80%;
+					//background-color: rgba(41, 214, 50, 0.473)!important;
+		
+					.item {
+						border-radius: 10px!important;
+						background: rgba(38, 19, 211, 0.5);
+						//background-color: rgba(0, 0, 255, 0.185);
+						//padding:30px;
+						//margin: 30px auto;
+						//margin: auto 30px;
+						
+						margin-left: 10px;
+						margin-bottom: 8px;
+						//background: rgba(255, 255, 255, 0.5);
+						border: medium none;
+						size: 500px;
+				
+
+
+						h2{
+							//margin-top: 25px;
+							color: white!important;
+						}
+						.comments{
+							//height: 300px;
+							//width: 300px;
+							//size: 500px;
+							//display: block;
+						}
+				
+						/*.coms{
+							width: 150px;
+							height: 100px!important;
+						}*/
+		
+		
+						.label{
+							margin-top: 20px;
+							margin: 15px;
+							text-align: justify;
+							color: white!important;
+							
+						}
+				
+				
+						.input{
+							margin: auto;
+							
+						}
+				
+				
+						.text-input, {
+							color: #fff;
+						}
+			
+			
+					}
+				}
+	
+			}
+		}
+			
+
+			//padding: 15px;
+			box-shadow: none;
+			background: rgba(0,0,0,0.5);
+			border-radius: 50px;
+		}
+	
+		ion-card-header.card-header {
+			color: #fff;
+		}
+	
+		/*.list > .item-block .item-inner {
+			border: medium none;
+		}*/
+	
+		
+		::-webkit-scrollbar-track
+		{
+		border-radius: 10px!important;
+		background-color: rgba(245, 245, 245, 0)!important;
+		}
+
+		::-webkit-scrollbar
+		{
+		width: 10px!important;
+		background-color: rgba(245, 245, 245, 0)!important;
+		}
+
+		::-webkit-scrollbar-thumb
+		{
+		border-radius: 10px!important;
+		background-color: rgba(41, 73, 214, 0.473)!important;
+		}
+
+		#validButton{
+			margin-top: 5px;
+		}
+		
+	
+		
+	
+	
+
+
+		}
+
+	
+}
+//<ion-scroll id='scroll' scrollY="true">   
+//(input)="change()"

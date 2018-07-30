@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-navbar color=primary>
+      <ion-title>LM Network</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content class="bg" text-center>
+    <ion-card>
+      <ion-card-header>Connection</ion-card-header>
+          <div >
+            <ion-list no-line >
+              <ion-item >
+                <ion-label><ion-icon name='contact'></ion-icon></ion-label><ion-input id="nameInput" type="any" placeholder="Email" [(ngModel)]="id"></ion-input>
+              </ion-item>
+  
+              <ion-item >
+                <ion-label><ion-icon name='lock'></ion-icon></ion-label><ion-input id="passwordInput" type="password" placeholder="Mot de passe" [(ngModel)]="password"></ion-input>
+              </ion-item>
+            
+            </ion-list>
+            
+            <a>Données de connexion oubliées? <b>Aide à la connexion</b></a>
+  
+            <button id="mailButton" ion-button block clear (tap) = "logIn()" >Se Connecter par Email</button>
+            <button id="fbButton" ion-button block clear (tap) = "logInWithFb()" >Se Connecter par<ion-icon name='logo-facebook' style="padding-left: 10px;"></ion-icon>acebook</button>
+            <button id="googleButton" ion-button block clear (tap) = "logInWithGoogle()" >Se Connecter par  <ion-icon name='logo-google' style="padding-left: 10px;"></ion-icon>oogle</button>
+  
+            
+            <p></p>
+            
+            <button id="saveButton" ion-button clear hide (tap) = "showNativeStorage()" >Storage</button>
+        </div>
+      
+    </ion-card>
+    <button id="compteButton" color="light" ion-button full clear (tap) = "showCreerCompte()" >Pas encore de compte? S'inscrire</button>
+  </ion-content>
+  

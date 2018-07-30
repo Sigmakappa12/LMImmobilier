@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+page-lm {
+	.loading {
+		
+		.h1{
+		 color:whitesmoke;
+		 font-weight: Bold;
+		 font-family:'Pacifico', cursive;
+		 display: block;
+		 
+	}}
+
+
+	.scroll-content{
+		
+	}
+
+	#eventButton {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		//margin-top: 130px;
+		padding: 10px;
+	}	
+
+	#networkButton,#venteButton,#logOutButton {
+		
+		margin: auto 0;
+		margin: 0 auto;
+	}
+
+	#logOutButton{
+		color: blue;
+	}
+	
+
+	.bg {
+		margin: 0;
+		height: 100%;
+		width: 100%;
+		background-color: black;
+		//background-image: url(../assets//imgs/fauteuil.jpg);
+		//background-size: cover;
+		//background: #03001e;  /* fallback for old browsers */
+		///background: -webkit-linear-gradient(to top, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+		//background: linear-gradient(to top, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	}
+	.content {margin: 0;}
+	
+	.scroll-content{margin-top:0;
+		margin: 0;
+		overflow: hidden;
+		overflow-y: hidden;
+			
+	}
+
+	.header{margin-bottom: 0px;}
+	.navbar{padding:0;margin-bottom: 0px;}
+
+	.logo{
+		margin: auto;
+		padding: 80px;
+		width: 100%;
+		
+		.img{
+			margin-top:1400px;
+		}
+	}
+}
