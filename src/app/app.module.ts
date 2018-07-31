@@ -24,7 +24,8 @@ import { LMPage } from '../pages/lm/lm';
 import { EventPage } from '../pages/event/event';
 import { PropositionVentePage} from '../pages/propositionVente/propositionVente';
 import { ChoixCollaborateurPage } from '../pages/choixCollaborateur/choixCollaborateur';
-
+import { DashboardPage } from '../pages/dashboard/dashboard';
+import { MenuPage } from '../pages/menu/menu';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -62,6 +63,8 @@ import firebase from 'firebase';
     SettingsPage ,
     ParrainagePage ,
     MoviesPage,
+    DashboardPage ,
+    MenuPage,
     TabsPage
   ],
   imports: [
@@ -89,6 +92,8 @@ import firebase from 'firebase';
     ParrainagePage ,
     MoviesPage,
     EventPage,
+    DashboardPage ,
+    MenuPage,
     TabsPage
   ],
   providers: [
