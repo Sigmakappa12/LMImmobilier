@@ -1,0 +1,59 @@
+<ion-header>
+    <ion-navbar text-center color=primary>
+           
+      <ion-title  >Paramètres</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+
+  <ion-content class="bg" >
+    
+    <ion-card class='identity' id='identity'>
+    <ion-card-header >{{user.displayName}}</ion-card-header>
+    <a><img class="image" src={{user.photoURL}} /></a>
+    <b><label class="photoLbl" for="file">Changer de photo</label> 
+      <input type="file"  name="file" class="profilePhoto" id="file" style="opacity: 0;" (change)="changeListener($event)" accept=".jpg, .jpeg, .png"></b>
+    <p>
+    <ion-label class="lbl1" fixed>Civilité :</ion-label>
+    <ion-label fixed class="civility" id="civility"></ion-label>
+  </p><p>
+    <ion-label class="lbl1" fixed>Prénom :</ion-label>
+    <ion-label fixed class="name" id="name"></ion-label>
+  </p><p>
+    <ion-label class="lbl1" fixed>Nom :</ion-label>
+
+    <ion-label fixed class="surname" id="surname"></ion-label>
+  </p>
+    <ion-card-header>Adresse :</ion-card-header>
+    
+  <p class="myP"><ion-label class="lbl" fixed>CP :</ion-label>
+    <ion-label fixed class="lbl3" id="postalCode"></ion-label><button class="but" ion-button   clear (tap)="editPostalCode()">Edit.</button>
+  </p><p class="myP"><ion-label class="lbl" fixed>Ville :</ion-label>
+    <ion-label fixed class="lbl3" id="town"></ion-label><button ion-button    class="but"   clear (tap)="editTown()">Edit.</button>
+  </p><p class="myP"><ion-label class="lbl" fixed>Pays :</ion-label>
+    <ion-label fixed class="lbl3" id="country"></ion-label><button ion-button   class="but"  clear  (tap)="editCountry()">Edit.</button>
+  </p><p class="myP"><ion-label class="lbl" fixed><ion-icon name='phone-portrait'></ion-icon></ion-label>
+    <ion-label fixed class="lbl3" id="phone"></ion-label><button ion-button    class="but"  clear (tap)="editPhone()">Edit.</button>
+  </p><p class="myP"><ion-label class="lbl" fixed><ion-icon name='mail'></ion-icon></ion-label>
+    <ion-label fixed class="lbl3" id="mail"></ion-label><button ion-button    class="but" clear  (tap)="editMail()">Edit.</button>
+   </p><p class="myP"><ion-label class="lbl" fixed>Parrain :</ion-label>
+    <ion-label fixed class="lbl3" id="parrainID"></ion-label>
+    <ion-label fixed class="lbl3" id="password" hidden></ion-label>
+  </p><p class="myP2"><button ion-button    class="but" full clear  (tap)="editPassword()">Changer le mot de passe</button>
+  </p><p class="myP2"><button *ngIf="!this.provider" id="fbButton" ion-button block clear (tap) = "linkWithFb()" >Relier le compte à<ion-icon name='logo-facebook' style="padding-left: 10px;"></ion-icon>acebook</button>        
+  </p><p class="myP2"><button *ngIf="!this.provider" id="googleButton" ion-button block clear (tap) = "linkWithGoogle()" >Relier le compte à<ion-icon name='logo-google' style="padding-left: 10px;"></ion-icon>oogle</button>
+  </p>
+  <button ion-button *ngIf="this.postalCode || this.country || this.phone || this.mail || this.password || this.town || this.file" id="validButton" class="validButton" full round (tap)="valid()">Valider les chamgements</button>
+  </ion-card>
+  </ion-content>
+
+
+
+
+
+
+  
+
+
+
+  

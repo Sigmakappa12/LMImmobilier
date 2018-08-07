@@ -1,0 +1,73 @@
+{
+  "rules": {
+    ".read": "true",
+    //".write": "true",
+     "workers":{
+     ".write": "true"
+     
+     
+     
+     },
+       "workersPhones":{
+     ".write": "true"
+     
+     
+     
+     },
+       "workersMails":{
+     ".write": "true"
+     
+     
+     
+     },
+      "proposition":{
+     ".write": "true"
+     
+     
+     
+     },
+    "users":{
+      ".read": "true",
+      //".write": "true",
+      
+      "$users":{
+        ".read": "true",
+     		 ".write": "!data.exists() || $users == root.child('users').child($users).child('id').val()",
+        "mail":{
+          
+        //	".validate": "!root.child('mails').child(newData.val()).exists() "
+        },
+       	"phone":{
+         // ".write": "!root.child('phones').child(data.val()).exists()",
+        //	".validate": "!root.child('phones').child(newData.val()).exists() "
+        },
+        "parrainID":{
+        	".validate": "root.child('users').child(newData.val()).exists() "
+        },
+       
+      
+      
+      }
+    },
+    "phones":{
+  		".read": "true",
+      "$phones":{
+       // ".write": "true",
+        ".write": "!data.exists() || !newData.exists()",
+      ".validate": "!root.child('users').child(newData.val()).exists()"
+      }
+    },
+    
+    "mails":{
+      ".read": "true",
+        "$mails":{
+          ".write": "!data.exists() || !newData.exists()",
+         // ".write": "true",
+      //".write": "!data.exists()",
+      ".validate": "!root.child('mails').child(newData.val()).exists()"
+        }
+    }
+  
+  
+  }
+}

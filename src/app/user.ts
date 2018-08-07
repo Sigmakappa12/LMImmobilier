@@ -1,4 +1,4 @@
-import { auth } from "../../node_modules/firebase";
+import { auth } from "firebase";
 
 export interface Roles{
     reader: boolean;

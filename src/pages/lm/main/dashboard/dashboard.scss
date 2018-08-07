@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+page-dashboard {
+	@import url('https://fonts.googleapis.com/css?family=Pacifico');    
+    
+    #saveButton {
+        display: block;
+        margin: auto 0;
+        margin: 0 auto;
+    }
+
+    .bg {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(../assets/imgs/forest.jpg);
+        background-size: cover;
+        //background: #03001e;  /* fallback for old browsers */
+        //background: -webkit-linear-gradient(to top, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+        //background: linear-gradient(to top, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    //.content {margin: 0;}
+    
+    .ion-content{
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+    
+    }
+
+    button.validButton{
+        display: hidden;
+    }
+    ::webkit-scrollbar,
+    *::webkit-scrollbar {
+        display: none;
+    }
+
+    ion-card.propositions,.sales,.sold{
+        margin-top: 80px;
+        padding: 30px;
+        box-shadow: none;
+        background: rgba(0,0,0,0.5);
+        border-radius: 20px;
+    
+        label.photoLbl{
+            color:#488aff;
+            //background-color: rgb(127, 111, 216);
+            //border-radius: 20px;
+            //width: 150px!important;
+        }
+    
+    
+    }
+
+    b{
+        width: 150px;
+    }
+
+
+    a{
+        img.image{
+        border-radius: 20px!important;
+        }
+    }
+
+    a,p,
+    ion-card-header.card-header {
+        //border-radius: 20px;
+        align-content: center;
+        text-align: center;
+        color: rgb(127, 111, 216);
+        
+    }
+
+    .list > .item-block .item-inner {
+        border: medium none;
+    }
+
+
+
+      
+        
+        //margin-left: 10px;
+        //margin-bottom: 10px;
+        //background: rgba(255, 255, 255, 0.2);
+        //border: medium none;
+        //size: 100px;
+        p{
+            text-align: left;
+            //border-radius: 20px;
+            background: rgba(38, 19, 211, 0.5);
+            
+            .input{
+                margin: auto;
+            }
+
+
+            .text-input, {
+                color: #fff;
+            }
+
+
+            *:-moz-placeholder{
+                color: #fff!important;
+            }
+
+            *:-ms-input-placeholder{
+                color: #fff!important;
+            }
+
+            *::-webkit-input-placeholder{
+                color: #fff!important;
+            }
+
+            input::-moz-placeholder {
+                color: #fff!important;
+            }
+            
+            input:-moz-placeholder {
+                color: #fff!important;
+            }
+           
+
+            ion-label{
+                min-width: 500px;
+                max-width: 500px;
+                margin-left:15px;
+                text-align:  left;
+                color: whitesmoke;
+                width: 35px;
+                //margin-right: 0px;
+                display: inline-block;
+                .icon{
+                    font-size: 25px;
+                    color: black;
+                }
+                
+            }
+
+          
+            
+            ion-label.lbl1{
+                min-width: 60px;
+                max-width: 60px;
+                margin-left:15px;
+                text-align:  left;
+                color: rgb(255, 183, 0);
+                width: 35px;
+                //margin-right: 0px;
+                display: inline-block;
+                .icon{
+                    font-size: 25px;
+                    color: rgb(255, 183, 0);
+                } 
+            }
+        }
+        p.myP2{
+            background: transparent;
+        }
+        
+        
+        
+        p.myP{
+            vertical-align: center;
+            height: 50px;
+            align-self: center;
+            text-align: left;
+            //border-radius: 20px;
+            background: rgba(38, 19, 211, 0.5);
+            ion-label{
+                min-width: 500px;
+                max-width: 500px;
+                margin-left:15px;
+                text-align:  left;
+                color: whitesmoke;
+                width: 35px;
+                //margin-right: 0px;
+                display: inline-block;
+                .icon{
+                    font-size: 25px;
+                    color: black;
+                }
+                
+            }
+
+            ion-label.lbl{
+                min-width: 54px;
+                max-width: 54px;
+                margin-left:15px;
+                text-align:  left;
+                color: rgb(255, 183, 0);
+                width: 35px;
+                //margin-right: 0px;
+                display: inline-block;
+                .icon{
+                        font-size: 25px;
+                    color: rgb(255, 183, 0);
+                } 
+                
+            }
+
+            
+
+            ion-label.lbl3{
+                min-width: 156px;
+                max-width: 200px;
+                margin-left:15px;
+                text-align:  left;
+                color: white;
+                width: 35px;
+                //margin-right: 0px;
+                display: inline-block;
+                .icon{
+                    font-size: 15px;
+                    color: rgb(255, 183, 0);
+                } 
+            }
+            button.but{
+                height:30px;
+                width: 30px;
+                //background-color: black;
+                vertical-align: center;
+                //font-size: 5px;
+                align-self: right;
+                //display: inline-block;
+                //width: 50px;
+            }
+        }
+
+            .input{
+                margin: auto;
+            }
+
+
+            .text-input, {
+                color: #fff;
+            }
+
+
+            *:-moz-placeholder{
+                color: #fff!important;
+            }
+
+            *:-ms-input-placeholder{
+                color: #fff!important;
+            }
+
+            *::-webkit-input-placeholder{
+                color: #fff!important;
+            }
+
+            input::-moz-placeholder {
+                color: #fff!important;
+            }
+            
+            input:-moz-placeholder {
+                color: #fff!important;
+            }
+    
+    
+	
+}

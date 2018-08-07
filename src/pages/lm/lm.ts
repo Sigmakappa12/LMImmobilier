@@ -1,14 +1,14 @@
 import { Component, ChangeDetectionStrategy , ViewChild, ElementRef, AfterViewInit} from '@angular/core';
 import { NavController, AlertController, NavParams , Nav, LoadingController} from 'ionic-angular';
-import { VueVentePage } from '../VueVente/VueVente';
-import { CreerComptePage } from '../CreerCompte/CreerCompte';
-import { NativeStoragePage } from '../native-storage/native-storage';
+import { MainPage } from './main/main';
+import { CreerComptePage } from '../lm/login/creerCompte/creerCompte';
+//import { NativeStoragePage } from '../native-storage/native-storage';
 import  firebase  from 'firebase';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { AngularFirestore } from 'angularfire2/firestore';
 
-import { LoginPage } from '../login/login';
-import { EventPage } from '../event/event';
+import { LoginPage } from './login/login';
+import { EventPage } from './event/event';
 import { FirebaseAuth } from '@firebase/auth-types';
 
 @Component({
@@ -123,7 +123,7 @@ export class LMPage {
   }
 
   private showVueVentePage(){
-    this.navCtrl.setRoot(VueVentePage);
+    this.navCtrl.setRoot(MainPage);
   }
 
   private showEvent() {

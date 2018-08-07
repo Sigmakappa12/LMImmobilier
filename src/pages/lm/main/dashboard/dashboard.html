@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar  color=primary>
+         
+    <ion-title  text-center>{{user.displayName}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="bg" >
+
+  <ion-card class='toSell' id='toSell'>
+    <ion-card-header >Propositions de ventes</ion-card-header>
+    <ion-scroll scrollY="true">
+      <ion-list class="sellContainer" id="sellContentHolder" ></ion-list>
+  </ion-scroll>
+
+  </ion-card>
+  <ion-card class='sales' id='sales'>
+    <ion-card-header >Ventes en cours</ion-card-header>
+    <ion-scroll scrollY="true">
+      <ion-list class="salesContainer" id="salesContentHolder" ></ion-list>
+  </ion-scroll>
+
+  </ion-card>
+  <ion-card class='sold' id='sold'>
+    <ion-card-header >Ventes effectuées</ion-card-header>
+    <ion-scroll scrollY="true">
+      <ion-list class="soldContainer" id="soldContentHolder" ></ion-list>
+  </ion-scroll>
+
+  </ion-card>
+
+
+
+</ion-content>
+
+
+
+
+
+
+
+
+
+

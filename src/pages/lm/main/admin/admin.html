@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-navbar  color=primary>
+           
+      <ion-title text-center >Administration</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+
+  <ion-content class="bg" text-center>
+    <ion-card class="myCard">
+     
+      <ion-card-header></ion-card-header>
+          <div class="myDiv">
+            <ion-list class="myList"  >
+             
+            <button ion-button full color=primary class="createButton" (tap)="createWorker()">
+                Créer un compte Collaborateur
+            </button>
+            <button ion-button full color=primary class="delButton" (tap)="delUser()">
+              Supprimer un compte Collaborateur ou Utilisateur
+          </button>
+
+            <button ion-button full color=primary class="seeButton" (tap)="seePropositions()">
+                Consulter les propositions de vente
+            </button>
+            <button ion-button full color=primary class="seeMailsPhones" (tap)="seeMailsPhones()">
+              Liste des mails et numéros de telephone
+          </button>
+              
+            </ion-list>
+            </div>
+            
+    
+            
+    </ion-card>
+    
+  </ion-content>
+
+
+
+
+
+
+  
+
+
+
+  

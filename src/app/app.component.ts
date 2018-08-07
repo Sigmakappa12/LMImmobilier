@@ -5,15 +5,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import firebase from 'firebase'; 
 import { LMPage } from '../pages/lm/lm';
 
-import { EventPage } from '../pages/event/event'
-import { DashboardPage } from '../pages/dashboard/dashboard';
-import { LoginPage } from '../pages/login/login';
-import { TabsPage } from '../pages/tabs/tabs';
-import { VueVentePage } from '../pages/VueVente/VueVente';
+import { EventPage } from '../pages/lm/event/event'
+import { DashboardPage } from '../pages/lm/main/dashboard/dashboard';
+import { LoginPage } from '../pages/lm/login/login';
+//import { TabsPage } from '../pages/tabs/tabs';
+import { MainPage } from '../pages/lm/main/main';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestore } from 'angularfire2/firestore';
 import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
 import * as $ from 'jquery';
+import * as admin from 'firebase-admin';
 
 @Component({
   templateUrl: 'app.html'
@@ -55,7 +56,7 @@ export class MyApp {
         this.nav.setRoot(LMPage);
         
         console.log("APPCOMPONENT NO USER");
-        if (!this.user && (this.rootPage==LMPage|| this.rootPage==VueVentePage)) {
+        if (!this.user && (this.rootPage==LMPage|| this.rootPage==MainPage)) {
           console.log("VIEWNOUSER");
           
           //console.log("NO USER", this.reload);
@@ -70,7 +71,7 @@ export class MyApp {
         }  
       } else {
 
-        if (this.user && (this.rootPage==LMPage|| this.rootPage==VueVentePage)) {
+        if (this.user && (this.rootPage==LMPage|| this.rootPage==MainPage)) {
           console.log("VIEWUSER");
           this.nav.setRoot(this.nav.getActive().component);
           //document.getElementById("loading").style.display = "none";
